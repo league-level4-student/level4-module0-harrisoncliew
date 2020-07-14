@@ -40,7 +40,7 @@ public class Cell implements Drawable {
 			isAlive = false;
 		}
 	} else if(isAlive==false) {
-		if(numNeighbors ==3) {
+		if(numNeighbors == 3) {
 			isAlive = true;
 		}
 	}
@@ -62,9 +62,10 @@ public class Cell implements Drawable {
 		if(isAlive == true) {
 			g.setColor(Color.GREEN);
 			g.fillRect(x, y, cellSize, cellSize);
-		} else {
+		} 
+			
 			g.setColor(Color.BLACK);
 			g.drawRect(x, y, cellSize, cellSize);
 		}
 	}
-}
+
